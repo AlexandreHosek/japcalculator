@@ -27,7 +27,7 @@ exports.handler = async function (event, context) {
       console.log('error', error);
       /* Error! return the error with statusCode 400 */
       return {
-        statusCode: 400,
+        statusCode: 401,
         body: JSON.stringify(error),
       };
     });
